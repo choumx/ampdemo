@@ -1,5 +1,4 @@
-{
-    "photos": [
+[
         {
           "albumId": 1,
           "id": 1,
@@ -3500,5 +3499,4 @@
           "url": "http://placehold.it/600/324309",
           "thumbnailUrl": "http://placehold.it/150/324309"
         }
-      ]
-}
+  ]

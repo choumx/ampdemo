@@ -62,9 +62,11 @@
        </p>
    </template>
  </amp-list>
+
+
  <form id="form-demo" method="GET" target="_top"
-      action="https://aliang.com/photos"
-      action-xhr="https://aliang.com/photos"
+      action="http://localhost:3000/photos"
+      action-xhr="http://localhost:3000/photos"
       on="submit-success: AMP.setState({
             photosList: {
               data: event.response
@@ -152,17 +154,10 @@
        </div>
    </template>
  </amp-list>
-      <amp-state id="albumState">
+      <amp-state id="photosList" src="http://localhost:3000/photos?albumId=1">
         <script type="application/json">
           {
-            albumId: '0'
-          }
-        </script>
-      </amp-state>
-      <amp-state id="photosList" src="https://aliang.com/photos?albumId=1">
-        <script type="application/json">
-          {
-            data: []
+            "data": []
           }
         </script>
       </amp-state>
